@@ -1,7 +1,7 @@
-# SensitiveSentenceDetector
+# SensitiveSentenceClassifier
 A binary-classifier network trained from X-sensitive dataset. It receives embeddings from MiniLM-v3-v2 and outputs preds which could be sigmoid to a value, measuring whether the sentence is inappropriate.
 ## Intro
-This network depends [`paraphrase-MiniLM-L3-v2`](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2). It is actually a stupid homework finished by a lazy student(me). The accuracy is acceptable.(about 72% on the test entries of [`X-sensitive`](https://huggingface.co/datasets/cardiffnlp/x_sensitive)).
+This network depends [`paraphrase-MiniLM-L3-v2`](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2). It is actually a stupid homework finished by a lazy student(me). The accuracy is acceptable(about 72% on the test entries of [`X-sensitive`](https://huggingface.co/datasets/cardiffnlp/x_sensitive)).
 
 - feature: Absolutely fast. Forget the accuracy, just fast.
 - structure: layerNorm -> linear -> linear
@@ -33,7 +33,7 @@ with torch.no_grad():
 ```
 ## License
 - **This project's code** is licensed under the **[MIT License](./License)**.
-- The `MiniLM-Xsensitive-en-L_class-v3` is licensed under **[Apache License 2.0](https://github.com/huggingface/sentence-transformers/blob/master/LICENSE)**. Copyright © 2020 
+- The `paraphrase-MiniLM-L3-v2` is licensed under **[Apache License 2.0](https://github.com/huggingface/sentence-transformers/blob/master/LICENSE)**. Copyright © 2020 
 [Nils Reimers, UKP Lab](https://www.ukp.tu-darmstadt.de/).
 - The `X-sensitive` is licensed under **[CC-BY-2.0](https://creativecommons.org/licenses/by/2.0/)**.
 Copyright © Cardiff NLP, Cardiff University
